@@ -23,3 +23,13 @@ git push
 
 - パスワード・APIキー・個人情報などの機密データは置かないでください（`.gitignore` で一部除外しています）。
 - 1ファイル 100MB を超えるものは GitHub に置けません。大きなファイルは Git LFS などを検討してください。
+
+## Claude 用スキル
+
+| スキル | 場所 | 内容 |
+| --- | --- | --- |
+| UI UX Pro Max | `.claude/skills/ui-ux-pro-max/` | 配色・フォント・レイアウト・アクセシビリティなどのUI/UXデザイン知識集（MIT ライセンス） |
+
+- 取得元: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill （v2.15.0、コミット `7246805`）
+- このリポジトリで Claude Code を使うと自動で読み込まれます。
+- 変更点: テスト用フォルダを除外し、検索スクリプトの呼び出しパスをこのリポジトリ用に修正。
